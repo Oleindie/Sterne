@@ -1,0 +1,265 @@
+/*CSS Reset
+***************************/
+#sterne * { line-height: 1; margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; -webkit-user-select:none;-moz-user-select:none; }
+#sterne ul { list-style:none }
+
+/*Sterne
+***************************/
+#sterne
+{
+	padding:30px;
+}
+
+
+/*PANEL
+***************************/
+#panel
+{
+	height:8em;
+}
+
+/*SYNC
+***************************/
+
+#sync
+{ 
+	float:left;
+
+	height:1em;
+	padding:2.5em 1em;
+	margin:1em 0em;
+	border-top-left-radius:1.5em;
+	border-bottom-left-radius:1.5em;
+	-moz-border-radius-topleft:1.5em;
+	-moz-border-radius-bottomleft:1.5em;
+	box-shadow:black 0px 2px 0px;
+	-webkit-box-shadow:black 0px 2px 0px;
+	-moz-box-shadow:black 0px 2px 0px;
+
+	text-shadow: black 2px 2px 2px;
+	font-size:100%;	
+
+	background: rgba(0,0,0,0.3);
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.2)), to(rgba(0,0,0,0.5)));
+	background: -moz-linear-gradient(top, rgba(0,0,0,0.2),  rgba(0,0,0,0.5));
+}
+
+#sync:hover
+{ 
+	color:white;
+	background: rgba(0,0,0,0.4);
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.3)), to(rgba(0,0,0,0.6)));
+	background: -moz-linear-gradient(top, rgba(0,0,0,0.3),  rgba(0,0,0,0.6));
+}
+
+
+/*TIME
+***************************/
+
+#time
+{ 
+	float:left;
+
+	padding-top:1em;
+
+	text-shadow: black 2px 2px 2px;
+	text-align:center;
+}
+
+
+#timepanel li
+{ 
+	float:left;
+	
+	min-width:4em;
+	height:6em;
+	padding:0em;
+
+	background: rgba(0,0,0,0.2);
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.1)), to(rgba(0,0,0,0.4)));
+	background: -moz-linear-gradient(top, rgba(0,0,0,0.1),  rgba(0,0,0,0.4));
+	box-shadow:black 0px 2px 0px;
+	-webkit-box-shadow:black 0px 2px 0px;
+	-moz-box-shadow:black 0px 2px 0px;
+}
+
+#timepanel li:first-child
+{
+	padding-left:1em;
+}
+#timepanel li:last-child
+{
+	padding-right:1em;
+}
+
+
+#timepanel li > div
+{ 
+	padding:0.5em 0em;
+}
+
+.plus, .minus 
+{
+	color:#666;
+}
+
+.plus:hover, .minus:hover
+{ 
+	color:white;
+	background:rgba(0,0,0,0.2);
+}
+
+.digit 
+{
+	height:1em;
+	overflow:hidden;
+}
+.digit div[id^="m"]:hover
+{ 
+	color:white;
+	background:rgba(0,0,0,0.2);
+}
+
+.digit div
+{
+	padding:0.5em 0em !important;
+}
+
+
+#time input
+{
+	display:none;
+	
+	width:3em;
+	padding:0.5em 0em;
+
+	color:white;
+	text-align:center;
+	-webkit-user-select:text;
+	-moz-user-select:text;
+	text-decoration:underline;
+	background:transparent;
+}
+
+
+/*PLAY
+***************************/
+
+#play
+{ 
+	float:left;
+	
+	width:2em;
+
+	border-radius:0.5em;
+	-moz-border-radius:0.5em;
+	
+	text-shadow: black 2px 2px 2px;
+	font-size:200%;
+
+	background: rgba(0,0,0,0.3);
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.2)), to(rgba(0,0,0,0.5)));
+	background: -moz-linear-gradient(top, rgba(0,0,0,0.2),  rgba(0,0,0,0.5));
+	box-shadow:black 0px 2px 0px;
+	-webkit-box-shadow:black 0px 2px 0px;
+	-moz-box-shadow:black 0px 2px 0px;
+}
+
+#play:hover
+{ 
+	color:white;
+	background: rgba(0,0,0,0.4);
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.3)), to(rgba(0,0,0,0.6)));
+	background: -moz-linear-gradient(top, rgba(0,0,0,0.3),  rgba(0,0,0,0.6));
+}
+
+#play[data-status="play"]
+{
+	padding:1.5em 0.5em 1.5em 1.5em;
+}
+
+
+/*GEO
+***************************/
+
+#geo
+{ 
+	float:left;
+	
+	padding:1em 0em;
+
+	text-shadow: black 2px 2px 2px;
+	text-align:center;
+}
+
+#geopanel 
+{	
+	height:4em;
+	padding:1em 1em;
+
+	background: rgba(0,0,0,0.2);
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.1)), to(rgba(0,0,0,0.4)));
+	background: -moz-linear-gradient(top, rgba(0,0,0,0.1),  rgba(0,0,0,0.4));
+	box-shadow:black 0px 2px 0px;
+	-webkit-box-shadow:black 0px 2px 0px;
+	-moz-box-shadow:black 0px 2px 0px;
+}
+
+#geopanel li 
+{
+	float:left;
+	width:4em;
+	padding:0em 0.0em;
+}
+
+#geopanel li >div
+{
+	padding:0.5em 0em;
+}
+
+#geopanel li > div:hover
+{ 
+	color:white;
+	background:rgba(0,0,0,0.2);
+}
+
+#geo input
+{
+	display:none;
+	
+	width:3em;
+	padding:0.5em 0em;
+
+	color:white;
+	-webkit-user-select:text;
+	-moz-user-select:text;
+	text-align:center;
+	text-decoration:underline;
+	background:transparent;
+}
+
+/*CAP
+***************************/
+
+#cap
+{ 
+	float:left;
+	
+	width:1.5em;	
+	height:6em;
+
+	margin:1em 0em;
+	border-top-right-radius:1.5em;
+	border-bottom-right-radius:1.5em;
+	-moz-border-radius-topright:1.5em;
+	-moz-border-radius-bottomright:1.5em;
+
+	color:transparent;
+	text-align:center;
+	background: rgba(0,0,0,0.3);
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.2)), to(rgba(0,0,0,0.5)));
+	background: -moz-linear-gradient(top, rgba(0,0,0,0.2),  rgba(0,0,0,0.5));
+	box-shadow:black 2px 2px 0px, black 0px 2px 0px;
+	-webkit-box-shadow:black 2px 2px 0px,black 0px 2px 0px;
+	-moz-box-shadow:black 2px 2px 0px,black 0px 2px 0px;
+}

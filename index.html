@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-16" />
+		<title>網頁版</title>
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/javascript" src="panel.js"></script>
+		<script type="text/javascript" src="calculation.js"></script>
+		<link type="text/css" href="panel.css" rel="stylesheet" />	
+		<link type="text/css" href="datalist.css" rel="stylesheet" />	
+	</head>
+	<body style="background-color:rgba(85,85,85,1);color:#bfbfbf">
+		<div id="sterne">
+			<div id="panel">	
+				<div id="sync" data-status="sync">同步</div>
+				<div id="time">
+					<ul id="timepanel">	
+						<li>					
+							<div class="plus"> +</div>
+							<div class="digit"><div id="ayear">2008年</div><div id="myear"></div><form><input type="text" name="year" id="iyear"/></form></div>
+							<div class="minus">−</div>
+						</li>
+						<li>
+							<div class="plus">+</div>
+							<div class="digit"><div id="amonth">1</div><div id="mmonth"></div><form><input type="text" name="month" id="imonth"/></form></div>
+							<div class="minus">−</div>
+						</li>
+						<li>
+							<div class="plus">+</div>
+							<div class="digit"><div id="adate">2</div><div id="mdate"></div><form><input type="text" name="date" id="idate"/></form></div>
+							<div class="minus">−</div>
+						</li>
+						<li>
+							<div class="plus">+</div>
+							<div class="digit"><div id="ahour">3</div><div id="mhour"></div><form><input type="text" name="hour" id="ihour"/></form></div>
+							<div class="minus">−</div>
+						</li>
+						<li>
+							<div class="plus">+</div>
+							<div class="digit"><div id="aminute">4</div><div id="mminute"></div><form><input type="text" name="minute" id="iminute"/></form></div>
+							<div class="minus">−</div>
+						</li>
+						<li>
+							<div class="plus">+</div>
+							<div class="digit"><div id="asecond">5</div><div id="msecond"></div><form><input type="text" name="second" id="isecond"/></form></div>
+							<div class="minus">−</div>
+						</li>	
+					</ul>	
+				</div>
+				<div id="play" data-status="play">▮▮</div>	
+				<div id="geo">	
+					<ul id="geopanel">
+						<li class="coor"><div id="latbutton">北緯</div><div id="lonbutton">東經</div></li>			
+						<li class="coor" id="coordigit"><div id="lat">24</div><form><input type="text" name="latitude" id="ilat"/></form><div  id="lon">120</div><form><input type="text" name="lontitude" id="ilon"/></form></li>			
+					</ul>	
+				</div>
+				<div id="cap">.</div>	
+			</div>
+			<div id="bellytag">行星</div>
+			<div id="datalist">
+				<ul id="planetlist">
+					<li><div>赤經</div><div>赤緯</div><div>仰角</div><div>方位角</div><div>方位角</div></li>
+				</ul>	
+			</div>
+					
+		</div>	
+	</body>
+</html>
